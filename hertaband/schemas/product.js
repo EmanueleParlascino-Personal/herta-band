@@ -28,6 +28,11 @@ export default{
             }
         },
         {
+            name: 'category',
+            title: 'Category',
+            type: 'string'
+        },
+        {
             name: 'price',
             title: 'Price',
             type: 'number'
