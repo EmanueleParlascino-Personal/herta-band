@@ -1,38 +1,35 @@
-import styles from "./App.module.css"
+import Shop from "./Components/Shop"
+import NavBar from "./Components/NavBar"
+import Banner from "./Components/Banner"
+import Shows from "./Components/Shows"
+import Gallery from "./Components/Gallery"
+import News from "./Components/News"
+import Contact from "./Components/Contact"
 
 function Page() {
 
 
   return (
     <>
-    <nav className={styles.navMenu}>
-      <a href="#">Shop</a>
-      <a href="#">Shows</a>
-      <a href="#">Gallery</a>
-      <a href="#">News</a>
-      <a href="#">Contact</a>
-      <div className={styles.dot}></div>
-    </nav>
-      <section className="banner-section">
-        <h2>Banner</h2>
-        <div className='shop-item'>this is the banner space</div>
-      </section>
-      <section id="one" className="shop-section">
-        <h2>Shop</h2>
-        <div className='shop-item'>this is a shop item</div>
-      </section>
-      <section id="two" className="shows-section">
-        <h2>Shows</h2>
-      </section>
-      <section id="three" className="gallery-section">
-        <h2>Gallery</h2>
-      </section>
-      <section id="four" className="news-section">
-        <h2>News</h2>
-      </section>
-      <section id="five" className="contact-section">
-        <h2>Contact</h2>
-      </section>
+        <NavBar />
+        <section id = "banner">
+            <Banner/>
+        </section>
+        <section id="shop">
+            <Shop />
+        </section>
+        <section id="shows" >
+            <Shows />
+        </section>
+        <section id="gallery" >
+            <Gallery />
+        </section>
+        <section id="news" >
+            <News />
+        </section>
+        <section id="contact" >
+            <Contact />
+        </section>
     </>
   )
 }
