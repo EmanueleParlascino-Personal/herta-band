@@ -5,12 +5,12 @@ const NavBar = () => {
   return (
     <nav className={styles.navMenu}>
         <a href="#shop">Shop</a>
-        <a href="#">Shows</a>
-        <a href="#">Gallery</a>
-        <a href="#">News</a>
-        <a href="#">Contact</a>
+        <a href="#shows">Shows</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
         <div className={styles.dot}></div>
-  </nav>
+    </nav>
   )
 }
 

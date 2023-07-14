@@ -1,0 +1,28 @@
+@font-face {
+    font-family: bannerTitle;
+    src: url('../../assets/anvil-5372/Anvil-8eO2.ttf')  format('truetype');
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    top: 20%;
+    
+}
+
+.title{
+    font-family: bannerTitle;
+    color: rgb(31, 0, 88);
+    font-size: 6rem;
+}
+
+.subtitle{
+    font-family: sectionTitle;
+    color: rgb(31, 0, 88);
+    font-size: 3rem;
+}

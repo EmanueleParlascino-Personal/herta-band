@@ -6,20 +6,22 @@ import Gallery from "./Components/Gallery"
 import News from "./Components/News"
 import Contact from "./Components/Contact"
 
-function Page() {
+import { client } from '../lib/client'
+
+const Page = ({products, banners, shows}) => {
 
 
   return (
     <>
         <NavBar />
         <section id = "banner">
-            <Banner/>
+            <Banner banners = {banners}/>
         </section>
         <section id="shop">
-            <Shop />
+            <Shop products = {products}/>
         </section>
         <section id="shows" >
-            <Shows />
+            <Shows shows = {shows}/>
         </section>
         <section id="gallery" >
             <Gallery />
@@ -32,6 +34,21 @@ function Page() {
         </section>
     </>
   )
+}
+
+export const getServerSideProps = async () => {
+    const query = '*[_type == "product"]';
+    const products = await client.fetch(query);
+
+    const bannerquery = '*[_type == "banner"]';
+    const banners = await client.fetch(bannerquery);
+
+    const showsQuery = '*[_type == "show"]';
+    const shows = await client.fetch(showsQuery);
+    return {
+        props:{products, banners, shows}
+    }
+
 }
 
 export default Page

@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2{
+ color: aliceblue;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    width: 100%;
+}
+.title::after, .title::before{
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #ccc;
+    background-color:#f8f8f8;
+}
+
+.image{
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #5f5f5f; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid rgba(46, 46, 46, 0.199);
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .5s;
+    margin: 30px 25px;
+    border-radius: 5px ;
+}
+
+.image:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}

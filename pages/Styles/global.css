@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "~react-image-gallery/styles/css/image-gallery.css";
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,44 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: sectionTitle;
+  src: url('../../assets/metal-vengeance-71995/MetalVengeance-0WqV9.ttf')  format('truetype');
+}
+
 body {
-  background: #272727;
+  background: #0e1311;
   font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+.banner-image{
+  width: 100%;
+  height: 50vh;
+  margin: 10vh 0;
+}
+
+
+.section-title {
+  text-align: center;
+  font-size:30px; font-weight:300; color:#ffffff; letter-spacing:1px;
+  text-transform: uppercase;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+  margin: 30px 43vw;
+}
+
+.section-title::after, .section-title::before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #ccc;
+  background-color:#f8f8f8;
+}
+
+.gallery-container{
+  margin: 70px;
 }

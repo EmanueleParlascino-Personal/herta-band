@@ -2,8 +2,8 @@ import React from 'react'
 
 const News = () => {
   return (
-    <div>
-      <h2>News</h2>
+    <div className='section-title'>
+      <h1>News</h1>
     </div>
   )
 }

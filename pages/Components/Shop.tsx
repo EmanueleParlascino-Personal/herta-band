@@ -1,12 +1,43 @@
 import React from 'react'
+import styles from "../Styles/shop.module.css"
+import { urlFor } from '../../lib/client'
 
-const Shop = () => {
-  return (
-    <div>
-        <h2>Shop</h2>
-        <div className='shop-item'>this is a shop item</div>
-    </div>
-  )
+const Shop = ({products}) => {
+    const clothing = products?.filter(p => p.category === "Clothing")
+    const accessories = products?.filter(p => p.category === "Accessories")
+    const tabs = products?.filter(p => p.category === "Tabs")
+    
+    return (
+        <div className={styles.container}>
+            <div className='section-title'>
+                <h1>Shop</h1>
+            </div>
+            <div className='title'>
+                <h2 >Clothing</h2>
+            </div>
+            <div className={styles.wrapper}>
+                {clothing?.map(p => 
+                <div className={styles.clippedBorder}>
+                    <img src ={urlFor(p.image[0])} className={styles.image} />
+                </div>)}
+            </div>
+            <h2 className='title'>Accessories</h2>
+            <div className={styles.wrapper}>
+                {accessories?.map(p => 
+                <div className={styles.clippedBorder}>
+                    <img src ={urlFor(p.image[0])} className={styles.image} />
+                </div>)}
+            </div>
+            <h2 className='title'>Tabs</h2>
+            <div className={styles.wrapper}>
+                {tabs?.map(p => 
+                <div className={styles.clippedBorder}>
+                    <img src ={urlFor(p.image[0])} className={styles.image} />
+                </div>)}
+            </div>
+        </div>
+    )
 }
+
 
 export default Shop

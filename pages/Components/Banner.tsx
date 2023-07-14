@@ -1,10 +1,15 @@
 import React from 'react'
+import { urlFor } from '../../lib/client'
+import styles from "../Styles/banner.module.css"
 
-const Banner = () => {
+const Banner = ({banners}) => {
   return (
     <div>
-        <h2>Banner</h2>
-        <div className='shop-item'>this is the banner space</div>
+        <img src ={urlFor(banners[0].image)} className='banner-image'/>
+        <div className={styles.textContainer}>
+            <h1 className={styles.title}>{banners[0].product}</h1>
+            <h3 className={styles.subtitle}>{banners[0].smallText}</h3>
+        </div>
     </div>
   )
 }

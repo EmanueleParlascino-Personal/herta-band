@@ -5,7 +5,7 @@
 
 .navMenu {
   position: absolute;
-  top: 10%;
+  top: 40px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -14,7 +14,7 @@
 .navMenu a {
   font-family: navbarFont;
   align-items: start;
-  color: #f6f4e6;
+  color: #f0e6f6;
   text-decoration: none;
   font-size: 2.5em;
   text-transform: uppercase;
