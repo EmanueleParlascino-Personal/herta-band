@@ -1,0 +1,24 @@
+.cta{
+
+}
+
+.inpt{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 15vw;
+  }
+  
+  .socialItem{
+    padding: 2vw;
+    width: 5vw;
+    height: 5vh;
+  }

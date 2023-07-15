@@ -8,7 +8,7 @@ import Contact from "./Components/Contact"
 
 import { client } from '../lib/client'
 
-const Page = ({products, banners, shows}) => {
+const Page = ({products, banners, shows, images}) => {
 
 
   return (
@@ -24,7 +24,7 @@ const Page = ({products, banners, shows}) => {
             <Shows shows = {shows}/>
         </section>
         <section id="gallery" >
-            <Gallery />
+            <Gallery images = {images}/>
         </section>
         <section id="news" >
             <News />
@@ -45,8 +45,13 @@ export const getServerSideProps = async () => {
 
     const showsQuery = '*[_type == "show"]';
     const shows = await client.fetch(showsQuery);
+
+    const imagesQuery = '*[_type == "galleryImage"]';
+    const images = await client.fetch(imagesQuery);
+
+    
     return {
-        props:{products, banners, shows}
+        props:{products, banners, shows, images}
     }
 
 }
