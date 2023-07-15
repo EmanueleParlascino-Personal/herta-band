@@ -9,8 +9,6 @@ import Contact from "./Components/Contact"
 import { client } from '../lib/client'
 
 const Page = ({products, banners, shows, images}) => {
-
-
   return (
     <>
         <NavBar />
@@ -49,7 +47,7 @@ export const getServerSideProps = async () => {
     const imagesQuery = '*[_type == "galleryImage"]';
     const images = await client.fetch(imagesQuery);
 
-    
+
     return {
         props:{products, banners, shows, images}
     }

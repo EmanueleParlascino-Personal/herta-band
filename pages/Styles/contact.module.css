@@ -1,5 +1,21 @@
-.cta{
+@font-face {
+  font-family: punk;
+  src: url('../../assets/grimoire-of-death-97399/GrimoireOfDeath-2O2jX.ttf')  format('truetype');
+}
 
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cta{
+  font-family: punk;
+  color: white;
+  font-size: 4rem;
 }
 
 .inpt{
@@ -9,16 +25,101 @@
     max-width: 280px;
     border-radius: 3px;
     overflow: hidden;
+    font: inherit;
+    padding: 0.2em 0.5em;
+    margin-bottom: 10px;
 }
 
 .footer{
     display: flex;
     justify-content: space-around;
-    margin: 5vh 15vw;
+    margin: 5vh 25vw;
   }
   
-  .socialItem{
-    padding: 2vw;
-    width: 5vw;
-    height: 5vh;
-  }
+.socialItem{
+  padding: 2vw;
+  width: 5vw;
+  height: 5vh;
+}
+
+.emailLink {
+  background-image: linear-gradient(
+    to right,
+    #0d94c5,
+    #666285 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.emailLink:before{
+  content: '';
+  background: #257c9e;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.emailLink:hover {
+  background-position: 0;
+}
+
+.emailLink:hover::before{
+  width: 100%;
+}
+
+.button23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}

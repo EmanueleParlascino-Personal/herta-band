@@ -12,7 +12,9 @@
     background-color: rgb(218, 217, 217);
     box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: -8px 16px 139px -38px rgba(252,252,252,1);
+    -moz-box-shadow: -8px 16px 139px -38px rgba(252,252,252,1);
+    box-shadow: -8px 16px 139px -38px rgba(252,252,252,1);
 }
 
 .show{

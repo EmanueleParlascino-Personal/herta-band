@@ -4,12 +4,14 @@ import styles from "../Styles/contact.module.css"
 
 const Contact = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <div className='section-title'>
         <h1>Contact</h1>
       </div>
+      <a href = "mailto: herta.band@gmail.com" className={styles.emailLink}>herta.band@gmail.com</a>
       <h2 className={styles.cta}>Stay tuned</h2>
-      <input className={styles.inpt}/>
+      <input className={styles.inpt} placeholder='your email'/>
+      <button className={styles.button23} role="button">Join Mailing List</button>
       <footer className={styles.footer}>
         <div className={styles.socialItem}>
           <SocialIcon url="https://www.facebook.com/" />
@@ -30,7 +32,6 @@ const Contact = () => {
           <SocialIcon url="https://bandcamp.com/" />
         </div>
       </footer>
-
     </div>
   )
 }

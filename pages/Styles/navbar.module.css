@@ -13,7 +13,29 @@
   height: 100px;
   top: 0;
   z-index: 3;
+}
+.logo{
+  width: 9vw;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+  filter: invert(1);
+}
+
+.cartIcon{
+  height: 70px;
+  width: 70px;
   
+}
+
+.cartButton{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 10;
+  background-color: black;
 }
 
 
