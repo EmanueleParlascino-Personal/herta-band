@@ -25,17 +25,18 @@
 }
 
 .cartIcon{
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
   
 }
 
 .cartButton{
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
   z-index: 10;
   background-color: black;
+  padding: 5px;
 }
 
 

@@ -33,6 +33,13 @@ body {
   animation: move-it 5s linear infinite;
 }
 
+.title{
+  font-family: sectionTitle;
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF;
+}
+
 
 
 

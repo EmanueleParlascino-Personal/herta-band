@@ -14,7 +14,7 @@
 .title{
     position: absolute;
     font-family: sectionTitle;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.664);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.651), 0 0 10px rgba(255,255,255,.5);
     font-size: 6rem;
     top:30%;
