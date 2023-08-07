@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: white;
 }
 
 .title{
@@ -17,7 +18,7 @@
     color: rgba(255, 255, 255, 0.664);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.651), 0 0 10px rgba(255,255,255,.5);
     font-size: 6rem;
-    top:30%;
+    top:20vh;
 }
 
 .subtitle{
@@ -26,5 +27,5 @@
     font-family: sectionTitle;
     color: rgb(255, 255, 255);
     font-size: 3rem;
-    top:50%;
+    top:40vh;
 }

@@ -39,6 +39,9 @@ body {
   color: #FFFFFF;
   text-shadow: 0 0 10px #FFFFFF;
 }
+.dots{
+  display: none;
+}
 
 
 

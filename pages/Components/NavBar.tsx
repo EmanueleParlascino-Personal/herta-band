@@ -11,7 +11,7 @@ const NavBar = () => {
     <div className={styles.container}>
       <Image src={logo} alt="" className={styles.logo} />
       <nav className={styles.navMenu}>
-          <Link  to="shop" spy={true} smooth={true} offset={-100} duration={500}>Shop</Link>
+          <Link  to="shop" spy={true} smooth={true} offset={-100} duration={500}>Merch</Link>
           <Link  to="shows" spy={true} smooth={true} offset={-100} duration={500}>Shows</Link>
           <Link  to="gallery" spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
           <Link  to="news" spy={true} smooth={true} offset={-100} duration={500}>News</Link>

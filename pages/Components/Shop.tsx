@@ -12,7 +12,7 @@ const Shop = ({products}) => {
     return (
         <div className={styles.container}>
             <div className='section-title'>
-                <h1>Shop</h1>
+                <h1>Merch</h1>
             </div>
             <div className='title'>
                 <h2 >Clothing</h2>
