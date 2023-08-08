@@ -4,6 +4,7 @@ import Banner from "./Components/Banner"
 import Shows from "./Components/Shows"
 import Gallery from "./Components/Gallery"
 import News from "./Components/News"
+import Videos from "./Components/Videos"
 import Contact from "./Components/Contact"
 
 import { client } from '../lib/client'
@@ -23,6 +24,9 @@ const Page = ({products, banners, shows, images}) => {
         </section>
         <section id="gallery" >
             <Gallery images = {images}/>
+        </section>
+        <section id="videos" >
+            <Videos/>
         </section>
         <section id="news" >
             <News />

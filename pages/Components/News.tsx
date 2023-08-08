@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "../Styles/news.module.css"
 
 const News = () => {
   return (
@@ -6,13 +7,26 @@ const News = () => {
       <div className='section-title'>
         <h1>News</h1>
       </div>
-      <iframe width="760" 
-              height="515" 
-              src="https://www.youtube.com/embed/IpUKO-WKaqo" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+      <div className={styles.wrapper}>
+        <div className={styles.newsContainer}>
+          <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5C06/production/_115385532_gettyimages-810407450.jpg" alt="ss" className={styles.newsThumbnail}/>
+          <div>
+            <a className={styles.newsLink}>Title</a>
+          </div>
+        </div>
+        <div className={styles.newsContainer}>
+          <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5C06/production/_115385532_gettyimages-810407450.jpg" alt="ss" className={styles.newsThumbnail}/>
+          <div>
+            <a className={styles.newsLink}>Title</a>
+          </div>
+        </div>
+        <div className={styles.newsContainer}>
+          <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5C06/production/_115385532_gettyimages-810407450.jpg" alt="ss" className={styles.newsThumbnail}/>
+          <div>
+            <a className={styles.newsLink}>Title</a>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

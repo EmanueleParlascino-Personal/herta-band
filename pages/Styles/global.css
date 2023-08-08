@@ -21,7 +21,7 @@
   }
 }
 
-body {  
+/* body {  
   background: repeating-linear-gradient(
   45deg,
   #000000,
@@ -31,6 +31,9 @@ body {
 );
   background-size: 100px 100px;
   animation: move-it 5s linear infinite;
+} */
+body {  
+  background: black;
 }
 
 .title{
@@ -39,10 +42,15 @@ body {
   color: #FFFFFF;
   text-shadow: 0 0 10px #FFFFFF;
 }
+
 .dots{
   display: none;
 }
 
+.video{
+  margin: 0 20px;
+  box-shadow: 3px 7px 80px -28px rgba(255,255,255,1);
+}
 
 
 
