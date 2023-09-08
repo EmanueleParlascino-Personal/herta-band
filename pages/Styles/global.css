@@ -21,7 +21,7 @@
   }
 }
 
-body {  
+/*body {  
   background: repeating-linear-gradient(
   90deg,
   #000000,
@@ -31,7 +31,11 @@ body {
 );
   background-size: 500px;
   animation: move-it 0.01s linear infinite;
-} 
+} */
+
+body{
+  background-color: black;
+}
 
 .title{
   font-family: sectionTitle;
