@@ -14,9 +14,6 @@ const Shop = ({products}) => {
             <div className='section-title'>
                 <h1>Merch</h1>
             </div>
-            <div className='title'>
-                <h2 >Clothing</h2>
-            </div>
             <div className={styles.wrapper}>
                 {clothing?.map(p => 
                 <Link href = {`/product/${p.slug.current}`}>
@@ -25,24 +22,10 @@ const Shop = ({products}) => {
                     </div>
                 </Link>)}
             </div>
-            <h2 className='title'>Accessories</h2>
-            <div className={styles.wrapper}>
-                {accessories?.map(p => 
-                <Link href = {`/product/${p.slug.current}`}>
-                    <div className={styles.clippedBorder}>
-                        <img src ={urlFor(p.image[0])} className={styles.image} />
-                    </div>
-                </Link>)}
-            </div>
-            <h2 className='title'>Tabs</h2>
-            <div className={styles.wrapper}>
-                {tabs?.map(p => 
-                <Link href = {`/product/${p.slug.current}`}>
-                    <div className={styles.clippedBorder}>
-                        <img src ={urlFor(p.image[0])} className={styles.image} />
-                    </div>
-                </Link>)}
-            </div>
+            <Link href = {`/Merch`}>
+                <p className={styles.seeMore}>See More..</p>
+            </Link>
+           
         </div>
     )
 }

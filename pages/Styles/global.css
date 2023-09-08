@@ -21,20 +21,17 @@
   }
 }
 
-/* body {  
-  background: repeating-linear-gradient(
-  45deg,
-  #000000,
-  #272727 5%,
-  #000000 5%,
-  #252525 10%
-);
-  background-size: 100px 100px;
-  animation: move-it 5s linear infinite;
-} */
 body {  
-  background: black;
-}
+  background: repeating-linear-gradient(
+  90deg,
+  #000000,
+  #0e0d0d 5%,
+  #000000 11%,
+  #363636 2%
+);
+  background-size: 500px;
+  animation: move-it 0.01s linear infinite;
+} 
 
 .title{
   font-family: sectionTitle;

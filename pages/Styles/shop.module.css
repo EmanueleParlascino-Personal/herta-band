@@ -8,6 +8,33 @@
  color: aliceblue;
 }
 
+.sectionsNav{
+    background: rgb(136,136,136);
+    background: linear-gradient(90deg, rgba(136,136,136,1) 0%, rgba(232,232,232,1) 52%, rgba(110,110,110,1) 100%); 
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    height: 30px;
+}
+
+.sectionsNav a{
+    margin: 5px 30px;
+    height: 100%;
+    cursor: default; 
+    font-size: large;
+}
+
+.sectionActive{
+    color:rgb(4, 1, 184);
+    text-shadow:1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.sectionInactive{
+    color: gray;
+}
 .wrapper{
     display: flex;
     flex-direction: row;
@@ -41,4 +68,47 @@
 .image:hover{
     outline: var(--b) solid var(--c);
     outline-offset: var(--g);
+}
+
+.seeMore {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.seeMore:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.seeMore:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
 }
