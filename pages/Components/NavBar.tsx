@@ -21,8 +21,8 @@ const NavBar = () => {
           <Link  to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
           <div className={styles.dot}></div>
       </nav>
-      {showCart && <Cart/>}
       <button className={styles.cartButton} onClick={() => setShowCart(true)}><Image src={cartIcon} alt=""  className={styles.cartIcon}/></button>
+      {showCart && <Cart/>}
     </div>
   )
 }
