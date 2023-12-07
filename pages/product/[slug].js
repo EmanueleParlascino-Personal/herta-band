@@ -2,10 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import {client , urlFor} from '../../lib/client'
 import styles from '../Styles/product.module.css'
+import { useStateContext } from '../../context/StateContext'
 
 const ProductDetails = ({products, product}) => {
     const { image, name, details, price } = product;
     const [index, setIndex] = useState(0);
+    const { decQty, incQty, qty, onAdd } = useStateContext();
     return (
         <div className={styles.container}>
             <div>
@@ -27,8 +29,14 @@ const ProductDetails = ({products, product}) => {
                 <h4 className={styles.detailsTitle}>Details: </h4>
                 <p className={styles.detailsBody}>{details}</p>    
                 <div>
+                    <div className='quantity'>
+                        <h3>Quantity:</h3>
+                        <button className='minus' onClick={decQty}>-</button>
+                        <span className='num'>{qty}</span>
+                        <button className='plus' onClick={incQty}>+</button>
+                    </div>
                     <button className={styles.addToCart}>Buy now</button>
-                    <button className={styles.addToCart}>Add to cart</button>
+                    <button className={styles.addToCart} onClick={() => onAdd(product, qty)}>Add to cart</button>
                 </div>   
             </div>
             

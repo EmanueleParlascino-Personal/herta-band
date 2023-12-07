@@ -4,9 +4,12 @@ import {Link} from 'react-scroll';
 import Image from 'next/image';
 import logo from '../../public/images/pngegg.png'
 import cartIcon from '../../public/images/cartIcon.png'
+import Cart from './Cart';
+import { useStateContext } from '../../context/StateContext';
 
 
 const NavBar = () => {
+  const { showCart, setShowCart, totalQuantities} = useStateContext();
   return (
     <div className={styles.container}>
       <Image src={logo} alt="" className={styles.logo} />
@@ -18,7 +21,8 @@ const NavBar = () => {
           <Link  to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
           <div className={styles.dot}></div>
       </nav>
-      <button className={styles.cartButton}><Image src={cartIcon} alt=""  className={styles.cartIcon}/></button>
+      {showCart && <Cart/>}
+      <button className={styles.cartButton} onClick={() => setShowCart(true)}><Image src={cartIcon} alt=""  className={styles.cartIcon}/></button>
     </div>
   )
 }
