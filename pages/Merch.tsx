@@ -4,6 +4,7 @@ import styles from "./Styles/shop.module.css"
 import { urlFor } from '../lib/client'
 import { client } from '../lib/client'
 import Link from 'next/link'
+import NavBar from './Components/NavBar'
 
 
 const Shop = ({products}) => {
@@ -17,6 +18,7 @@ const Shop = ({products}) => {
     
     return (
         <div className={styles.container}>
+            <NavBar />
             <div className={styles.sectionsNav}>
                 <a onClick={() => setSection("Clothing")} className={section == "Clothing" ? styles.sectionActive : styles.sectionInactive}>Clothing</a>
                 <a onClick={() => setSection("Accessories")} className={section == "Accessories" ? styles.sectionActive : styles.sectionInactive}>Accessories</a>
